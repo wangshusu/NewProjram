@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <errno.h>
+#include <string.h>
 
 #define MAX_BUF_NUMBER 1024
 
@@ -19,7 +20,7 @@ int main() {
         fprintf(stderr, "read error!\n");
     }
 
-
+    printf("buf : \n%s\n", buf);
 
     close(fd);
     return 1;

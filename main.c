@@ -5,5 +5,5 @@
 
 int main() {
     int fd = open("./1.txt", O_RDONLY);
-    return 0;
+    return 1;
 }
